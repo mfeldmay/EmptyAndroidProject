@@ -23,10 +23,6 @@ workflows:
   test-and-build:
     jobs:
       - release-build:
-          requires:
-          #  - unit-test
-          #  - android-test-all
-          #            - benchmarks-ftl
           filters:
             branches:
               only: develop # Commits to main branch
